@@ -31,11 +31,11 @@ namespace MVC_CSRF_AJAX.Controllers
             return View();
         }
 
+        // http://kevintsengtw.blogspot.tw/2013/09/aspnet-mvc-csrf-ajax-antiforgerytoken.html
         public ActionResult AccountEdit()
         {
             return View();
         }
-
 
         [HttpPost]
         [AjaxValidateAntiForgeryToken]
